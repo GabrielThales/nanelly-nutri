@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Paleta ameixa + tipografia */
+@theme {
+  --color-plum-50: #fbf6fa;
+  --color-plum-100: #f4e8f1;
+  --color-plum-200: #e8d0e2;
+  --color-plum-500: #8e4585;
+  --color-plum-700: #6d2c53;
+  --color-plum-900: #341328;
+  --color-paper: #fdfbfc;
+  --color-whatsapp: #25d366;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-plum-900);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* Evita que o header fixo cubra o título ao clicar nos links âncora */
+section[id] { scroll-margin-top: 5rem; }
